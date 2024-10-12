@@ -6,7 +6,7 @@ def reason(parsed_query):
         parsed_query (dict): The parsed components of the query.
 
     Returns:
-        list: Reasoning steps.
+        dict: Reasoning steps and analyses.
     """
     key_elements = identify_key_elements(parsed_query)
     user_perspective = analyze_user_perspective(parsed_query)
